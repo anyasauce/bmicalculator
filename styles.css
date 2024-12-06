@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #292945;
+    --secondary-color: #39395b;
+    --background-color: #1e1e30;
+    --card-bg: #292945;
+    --text-color: #f5f5f5;
+    --success-color: #22c55e;
+    --danger-color: #ef4444;
+    --underweight-color: #fbbf24;
+    --healthy-color: #22c55e;
+    --overweight-color: #ef4444;
+    --obese-color: #9b1d20;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #6a5acd, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #6a5acd, #8a2be2);
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #8a2be2, #6a5acd);
+    transform: scale(1.05);
+}
+
+.form-control {
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+}
+
+.form-control::placeholder {
+    color: #cccccc;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(41, 41, 69, 0.25);
+}
+
+#result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: var(--card-bg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.bmi-status {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.status-healthy {
+    color: var(--healthy-color);
+}
+
+.status-underweight {
+    color: var(--underweight-color);
+}
+
+.status-overweight {
+    color: var(--overweight-color);
+}
+
+.status-obese {
+    color: var(--obese-color);
+}
