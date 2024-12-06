@@ -40,6 +40,22 @@ body {
     text-align: center;
 }
 
+.table-hover tbody tr:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    color: white;
+}
+
+.table-hover tbody tr td,
+.table-hover tbody tr th {
+    transition: color 0.3s ease;
+}
+
 .btn-primary {
     background: linear-gradient(45deg, #6a5acd, #8a2be2);
     border: none;
@@ -59,6 +75,11 @@ body {
     border-radius: 10px;
     background-color: var(--secondary-color);
     border: none;
+    color: var(--text-color);
+}
+
+.form-control:focus{
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
