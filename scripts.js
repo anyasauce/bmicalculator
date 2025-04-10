@@ -86,7 +86,7 @@ function render() {
 
                     </div>
                     <div class="card-footer text-center">
-                        <p class="text-white mb-0">Developed by <a href="https://codewithjosh.vercel.app/" target="_blank" class="text-white">CodewithJosh</a></p>
+                        <p class="text-white mb-0">Developed by <a href="https://josiahh.vercel.app/" target="_blank" class="text-white">Josiah Dev</a></p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,6 @@ function render() {
     
     root.innerHTML = content;
 
-    // Render BMI chart initially
     renderBMIChart();
 }
 
@@ -105,7 +104,6 @@ function renderBMIChart() {
     const chartLabel = ['Your BMI', 'Healthy Upper Limit', 'Overweight Upper Limit', 'Obese Upper Limit'];
     const chartColors = [getStatusColor(0), '#22c55e', '#ef4444', '#9b1d20'];
 
-    // Create the BMI chart
     chart = new Chart(document.getElementById('bmi-chart'), {
         type: 'bar',
         data: {
